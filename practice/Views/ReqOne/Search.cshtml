@@ -1,0 +1,23 @@
+﻿<div class="text-center">
+    @foreach (var item in ViewBag.posts)
+    {
+        <li>title: @item.title</li>
+        <li>description: @item.body</li>
+        <li>numOfAnswers: @item.answercount</li>
+        <li>votecount: @item.votecount</li>
+        <li>displayname: @item.displayname</li>
+        <li>reputation: @item.reputation</li>
+        @foreach (var b in item.bages)
+        {
+            <li>bages: @b</li>
+        }
+        
+    }
+</div>
+<br />
+@*<div class="text-center">
+    @foreach (var item in ViewBag.bages)
+    {
+        <li>bages: @item.bages</li>
+    }
+</div>*@
